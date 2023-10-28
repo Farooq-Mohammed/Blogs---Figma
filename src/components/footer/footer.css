@@ -1,0 +1,13 @@
+.footer-container {
+    margin-top: 0;
+    padding: 10px 20px;
+    background: #3d3d3d;
+    text-align: center;
+}
+
+
+.footer-container > * {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 14px;
+}

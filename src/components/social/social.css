@@ -1,0 +1,136 @@
+.social {
+  flex: 2;
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+}
+
+.social-card {
+  margin: 0 auto;
+  background: hsl(169, 78%, 36%);
+  border-radius: 15px;
+  width: 320px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-1 {
+  padding: 35px 3px 50px 3px;
+}
+
+.heading {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.container-1 input {
+  text-align: center;
+  max-width: 220px;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+
+.subscribe {
+  outline: none;
+  border: none;
+  margin-top: 40px;
+  padding: 7px;
+  width: 100%;
+  max-width: 220px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #fff;
+  background: hsl(169, 89%, 25%);
+  cursor: pointer;
+}
+
+.container-2 {
+  padding: 15px 3px 40px 3px;
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  gap: 30px;
+}
+
+.container-2 span {
+  padding: 15px 12px;
+  border-radius: 50%;
+}
+
+.instagram {
+  background: linear-gradient(
+    45deg,
+    rgba(254, 218, 117, 1) 0%,
+    rgba(250, 126, 30, 1) 25%,
+    rgba(214, 41, 118, 1) 50%,
+    rgba(150, 47, 191, 1) 75%,
+    rgba(79, 91, 213, 1) 100%
+  );
+}
+.twitter {
+  background: #000;
+}
+.linkedin {
+  background: #0072b1;
+}
+
+@media (max-width: 1230px) {
+  .social {
+    background-color: #eee;
+    padding: 25px;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .social-card {
+    margin: 0;
+    width: 350px;
+  }
+}
+
+@media (max-width: 750px) {
+  .social {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 430px) {
+  .social-card {
+    margin: 0;
+    width: 100%;
+  }
+
+  .container-1 input {
+    width: 70%;
+  }
+
+  .subscribe {
+    width: 70%;
+  }
+}
+
+@media (max-width: 350px) {
+  .social-card {
+    overflow: hidden;
+  }
+  .social-links {
+    justify-content: center;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .container-2 {
+    padding: 10px 3px 30px 3px;
+  }
+}

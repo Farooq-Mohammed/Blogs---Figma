@@ -1,0 +1,47 @@
+* {
+  --bg-1: #fff;
+  --bg-2: #eee;
+  --bg-3: #ddd;
+  --bg-red: hsl(0, 62%, 41%);
+  --bg-green: hsl(169, 89%, 25%);
+  --txt-green: hsl(169, 83%, 32%);
+}
+
+.App {
+  background-color: #fff;
+  max-width: 2140px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.PrivateRoute {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main-container {
+  padding: 0 40px;
+  flex: 1;
+}
+
+
+.footer-container {
+  margin-top: 150px;
+  margin-bottom: 0;
+  padding: 10px 20px;
+  background: #3d3d3d;
+  text-align: center;
+}
+
+
+.footer-container > * {
+  margin: 0 auto;
+  color: #fff;
+  font-size: 14px;
+}
+@media (max-width: 900px) {
+  .main-container {
+    padding: 0 15px;
+  }
+}

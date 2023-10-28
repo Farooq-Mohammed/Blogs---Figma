@@ -1,0 +1,22 @@
+.post-container {
+    /* background: #fafafa; */
+    flex: 6;
+}
+
+.post-container .fa-clock {
+    margin: 0 10px 0 5px;
+}
+
+.post-container .tag-group {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.post-container .tag {
+    background: #eee;
+    padding: 3px 15px;
+    text-align: center;
+    border-radius: 14px;
+}

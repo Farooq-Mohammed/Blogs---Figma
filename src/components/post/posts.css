@@ -1,0 +1,135 @@
+* {
+  font-family: inherit;
+}
+/* 
+------------- Horizontal post cards -------------
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.post-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.post-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.link span {
+  margin-left: 4px;
+}
+
+.fa-arrow-right {
+  font-size: 12px;
+} 
+
+------------- Horizontal post cards -------------
+*/
+
+.posts {
+  flex: 6;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+.post-card img {
+  width: 100%;
+  aspect-ratio: 1.1/1;
+  object-fit: cover;
+}
+
+.post-card .text-content {
+  margin: 0 3px;
+  height: 160px;
+
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-card .post-title {
+  font-size: 18px;
+  font-weight: 600;
+
+  height: 54px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.post-card .post-description {
+  font-size: 14px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.link {
+  font-size: 12px;
+  font-weight: 500;
+  color: hsl(169, 83%, 32%);
+}
+
+@media (max-width: 900px) {
+  .posts {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 775px) {
+  .posts {
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  }
+}
+
+@media (max-width: 450px) {
+  .posts {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+}
